@@ -150,10 +150,3 @@ Resposta esperada:
 }
 ```
 
-## Observações sobre segurança
-
-A API não utiliza sessão HTTP. Cada requisição protegida precisa enviar o token JWT no header `Authorization`.
-
-As senhas são salvas usando BCrypt.
-
-A chave JWT foi colocada no arquivo `application.properties` apenas para fins didáticos. Em sistemas reais, o ideal é armazenar esse valor em variável de ambiente.
